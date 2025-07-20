@@ -11,7 +11,7 @@ class Clovek(ABC):
         self._vek = vek  # vek s podtrzitkem ( _ ) je privatni
         # (jakoby)
 
-    @abstractmethod
+    # @abstractmethod
     def vrat_povolani(self):
         pass
 
