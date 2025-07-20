@@ -1,11 +1,12 @@
 from pes import Pes
 from kachna import Kachna
 from kocka import Kocka
+from zvirata.zbarveni import Zbarveni
 from zvire import Zvire
 
 zvire = Zvire(5)
 
-kocka = Kocka(10,"Ruzova")
+kocka = Kocka(10,Zbarveni.BILE)
 
 kachna = Kachna(2,"Zluta",True)
 pes = Pes(20,"Zeleny",False)

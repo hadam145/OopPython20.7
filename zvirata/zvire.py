@@ -1,4 +1,7 @@
-class Zvire:
+from abc import ABC, abstractmethod
+
+
+class Zvire(ABC):
 
     def __init__(self, vaha, barva="modrá"):
         self._vaha = vaha
@@ -11,8 +14,9 @@ class Zvire:
     def nakrm(self, hmotnost):
         self._vaha += hmotnost
 
+    @abstractmethod
     def vrat_zvuk(self):
-        return ""
+        pass
 
     def __str__(self):
         typ_zvirete = "Létavé" if self.umi_letat else "Nelétavé"
